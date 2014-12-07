@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  housework_type_id: 1
+  worker_id: 1
+  start_time: 2014-12-07 21:48:03
+  end_time: 2014-12-07 21:48:03
+
+two:
+  housework_type_id: 1
+  worker_id: 1
+  start_time: 2014-12-07 21:48:03
+  end_time: 2014-12-07 21:48:03
