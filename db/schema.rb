@@ -11,9 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141207092413) do
+ActiveRecord::Schema.define(version: 20141207124803) do
 
   create_table "housework_types", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: true do |t|
+    t.integer  "housework_type_id"
+    t.integer  "worker_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "workers", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
